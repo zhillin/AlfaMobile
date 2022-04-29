@@ -1,0 +1,186 @@
+
+.typeform-share-custom{
+    display:inline-block;
+    text-decoration:none;
+    background-color:#EF1324;
+    color:white;
+    cursor:pointer;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size: 1.25rem;
+    line-height: 2.27;
+    text-align:center;
+    margin:0;
+    width: 18rem;
+    height: 3rem;
+    padding: 0 1.75rem;
+    border-radius:0.375rem;
+    overflow:hidden;
+    font-weight: 500;
+}
+
+/* 
+* Hover effect
+*/
+
+@media screen and (min-width: 990px) {
+    .offer__btn:hover .offer__btn_txt{
+        color: #ef3124;
+    }
+    .offer__btn:hover{
+        cursor: pointer;
+    }
+    .app__nav_itm:hover{
+        cursor: pointer;
+        color: #9aa2ab;
+    }
+    .app__itm_icon:hover{
+        cursor: pointer;
+        background-color: #fff;
+    }
+    .footer__top:hover{
+        cursor: pointer;
+        background-color: #ffffff7d;
+    }
+    .footer__link:hover{
+        opacity: 0.9;
+        cursor: pointer;
+    }
+}
+
+
+/* 
+* Desktop 1400
+*/
+
+@media screen and (max-width: 1800px) and (min-width: 991px) {
+    /* .contb{
+        width: 72rem;
+    } */
+    /* html{
+        font-size: 11px;
+    } */
+}
+
+
+/* 
+* Desktop 1400
+*/
+
+@media screen and (max-width: 1400px) and (min-width: 991px) {
+    .contb{
+        width: 72rem;
+    }
+    /* html{
+        font-size: 11px;
+    } */
+}
+
+
+/* 
+* Desktop 1250
+*/
+@media screen and (max-width: 1250px) and (min-width: 991px) {
+    html{
+        font-size: 14px;
+    }
+}
+
+/* 
+* Desktop 1300
+*/
+@media screen and (max-width: 1100px) and (min-width: 991px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+
+/* 
+* Mobile 767
+*/
+@media screen and (max-width: 767px){
+    .chan__itm:not(:nth-child(-n+3)){
+        border: none;
+    }
+    .app__itm:last-child{
+        margin-right: 0;
+    }
+    .typeform-share-custom{
+        width: 14rem;
+        height: 2.4rem;
+        font-size: 1rem;
+        line-height: 2.4;
+        padding: 0;
+    }
+}
+
+
+/* 
+* Mobile 479
+*/
+
+@media (max-width: 479px) {
+    html {
+        font-size: 4.19vw;
+    }
+}
+
+
+
+/* 
+* All screen
+*/
+
+@media screen and (min-width: 0px) {
+    .chan__itm p,
+    .head__btn,
+    .offer__btn_txt,
+    .app__nav_itm,
+    .app__itm_icon,
+    .app_itm_over,
+    .footer__top,
+    .footer__link,
+    .chan_hsp,
+    .slide_nav_itm{
+        transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, fill 0.2s ease, opacity 0.2s ease;
+    }
+    .offer_img,
+    .app_itm_over{
+        pointer-events: none;
+    }
+    .app__nav_itm[state=enable]{
+        color: #000;
+    }
+    .app__itm[state=enable] .app_itm_over{
+        opacity: 1;
+    }
+    .app__itm[state=enable] .app__itm_icon_open{
+        display: none;
+    }
+    .app__itm[state=enable] .app__itm_icon_close{
+        display: block;
+    }
+    .slide_nav_itm[state=enable]{
+        background-color: #EF3124;
+    }
+    .chan__itm:last-child,
+    .app__slide_wrap:last-child .app__itm:last-child{
+        margin-right: 0;
+    }
+    /* select text */
+    ::-moz-selection {
+        color: #fff;
+        background: #ef3124;
+    }
+     ::selection {
+        color: #fff;
+        background: #ef3124;
+    }
+    /* reset */
+    * {
+        outline: none;
+    }
+    input {
+        border-radius: 0;
+    }
+}
